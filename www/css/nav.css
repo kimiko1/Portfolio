@@ -1,0 +1,15 @@
+ul{
+    display: flex;
+    justify-content: center ;
+    gap: 5%;
+}
+h1{
+    text-align: center;
+}
+.nav-conn{
+    display: flex;
+    justify-content: flex-end;
+}
+img{
+    width: 18%;
+}

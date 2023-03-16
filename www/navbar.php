@@ -30,12 +30,15 @@ if (strpos($filename, 'informationPersonnelles') !== false) {
     $connectionActive = 'active';
 }
 ?>
-<ul class="nav nav-pills justify-content-center">
+<head>
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<ul class="nav nav-pills">
     <li class="nav-item">
-        <a class="nav-link <?php echo $indexActive ?>" href="#">Accueil</a>
+        <a class="nav-link <?php echo $indexActive ?>" href="index.php">Accueil</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link <?php echo $informationPesonnellesActive ?>" href="#">Information Personnelles</a>
+        <a class="nav-link <?php echo $informationPesonnellesActive ?>" href="informationPersonnelles.php">Information Personnelles</a>
     </li>
     <li class="nav-item">
         <a class="nav-link <?php echo $projetsActive ?>" href="#">Projets</a>
