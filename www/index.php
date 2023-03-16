@@ -10,8 +10,12 @@ use Model\BDD;
 $user = BDD::affiche()
 
 ?>
+<!Doctype html>
 <html>
-
+<head>
+    <title>Portfolio</title>
+    <?php require('navbar.php');?>
+</head>
 <body>
     <p>test</p>
 </body>
