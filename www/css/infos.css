@@ -2,7 +2,17 @@ body{
     background: url('../img/infos.jpg') no-repeat;
     background-size:cover; 
 }
-div.jumbotron{
+.container{
     display: flex;
+    flex-direction: column;
     margin-top: 5%;
+    background-color: white ;
+    border-radius: 133px;
+}
+.title{
+    text-align: center;    
+}
+.message{
+    text-align: center; 
+    margin-top: 20px;
 }

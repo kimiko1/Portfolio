@@ -17,11 +17,14 @@ $infos = $bdd->recupInfo();
         <link rel="stylesheet" href="css/infos.css">
 </head>
 <body>
-<div class="jumbotron">
-  <h1 class="display-3">Bonjour à toi!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-2">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+<div class="container">
+    <div class="title">
+        <h1>Bonjour à toi!</h1>
+    </div>
+    <div class="message">
+        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    </div>
 </div>
 </body>
 </html>
