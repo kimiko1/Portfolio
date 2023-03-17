@@ -2,20 +2,53 @@
 namespace Model;
 use SQLite3;
 class BDD{
-    private static string $cheminDeLaBDD = '../data/data.db';
+    /**
+     * Singleton de la base de données.
+     */
+    private static $_instance;
 
-    static public function affiche()
+    /**
+     * Variable de classe indiquant le chemin d'accès vers le fichier de la base de données.
+     */
+    private static string $cheminDeLaBDD = '../data/database.db';
+
+    /**
+     * Base de données SQLite3.
+     */
+    private $bdd;
+
+    /**
+     * Cette methode renvoie un objet unique de notre base de donnée.
+     * C'est ce que l'on nomme communément un "Singleton".
+     *
+     * @return BDD
+     */
+    public static function instance()
     {
-        $conn = new SQLite3(BDD::$cheminDeLaBDD);
-        $req = $conn->query("SELECT * from identification");
-        $user = array();
-        $results = $req;
-        if ($results) {
-            while ($row = $results->fetchArray()) {
-                array_push($user, new User($row[0], $row[1], $row[2], $row[3], $row[4], $row[5]));
+        if (is_null(self::$_instance)) {
+            self::$_instance = new BDD();
+        }
+
+        return self::$_instance;
+    }
+    public function __construct()
+    {
+        $this->bdd = new SQLite3(BDD::$cheminDeLaBDD);
+    }
+    public function recupInfo()
+    {
+        $bdd = new SQLite3(BDD::$cheminDeLaBDD);
+        $req = $bdd->query("SELECT * FROM infos_persos");
+        $infos = array();
+        // La requête a renvoyé des éléments ?
+        if ($req) {
+            // Récupération des lignes de la table
+            while ($res = $req->fetchArray(1)) {
+                // Chaque enregistrement vient enrichir le tableau.
+                $infos[] = $res;
             }
         }
-        return $user;
+        return $infos;
     }
 }
 ?>

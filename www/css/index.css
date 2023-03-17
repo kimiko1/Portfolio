@@ -1,8 +1,15 @@
 body{
     background: url('../img/accueil.png') no-repeat;
-    background-size:cover;
+    background-size:cover;    
 }
-h2{
+h1{
     text-align: center;
     color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.image{
+    display: block;
+    text-align: center;
+    height: auto;
 }
