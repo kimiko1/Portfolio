@@ -3,10 +3,13 @@ body{
     background-size:cover;    
 }
 h1{
+    font-family: Imperial Script;
+    font-style: normal;
     text-align: center;
     color: aliceblue;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 10%;
 }
 .image{
     display: block;
