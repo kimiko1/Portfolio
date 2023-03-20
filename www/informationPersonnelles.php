@@ -17,14 +17,39 @@ $infos = $bdd->recupInfo();
         <link rel="stylesheet" href="css/infos.css">
 </head>
 <body>
+    <?php foreach($infos as $p):?>
 <div class="container">
     <div class="title">
-        <h1>Bonjour à toi!</h1>
+        <h1>Nom et Prénom :</h1>
     </div>
     <div class="message">
-        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p>Je m'appel <?php echo $p['nom']. " " .$p['prenom']?>.</p>
     </div>
 </div>
+<div class="container">
+    <div class="title">
+        <h1>âge et date de naissance :</h1>
+    </div>
+    <div class="message">
+        <p>J'ai actuellement <?php echo $p['age']?> ans et je suis née le <?php echo $p['date_de_naissance']?></p>
+    </div>
+</div>
+<div class="container">
+    <div class="title">
+        <h1>Adresse postal et adresse mail :</h1>
+    </div>
+    <div class="message">
+        <p>j'habite au <?php echo $p['adresses']?> et mon email est : <?php echo $p['email']?></p>
+    </div>
+</div>
+<div class="container">
+    <div class="title">
+        <h1>Ce que je fais actuellement :</h1>
+    </div>
+    <div class="message">
+        <p><?php echo $p['activite']?></p>
+    </div>
+</div>
+<?php endforeach;?>
 </body>
 </html>

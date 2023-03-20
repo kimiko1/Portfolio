@@ -22,7 +22,7 @@ $infos_perso = $bdd->recupInfo();
 
 <body>
 <?php foreach ($infos_perso as $persos): ?>
-    <h1 style="font-size:4  vw;">Bonjour et bienvenue sur le portfolio de <?php echo $persos["prenom"].' '.$persos["nom"]?>. J'ai actuellement <?php echo $persos['age'].' '?>ans et je suis en <?php echo $persos['activite']?>.</h1>
+    <h1 style="font-size:4  vw;">Bonjour et bienvenue sur le portfolio de <?php echo $persos["prenom"].' '.$persos["nom"]?>. J'ai actuellement <?php echo $persos['age'].' '?>ans et <?php echo $persos['activite']?>.</h1>
     <?php endforeach;?>
 </body>
 

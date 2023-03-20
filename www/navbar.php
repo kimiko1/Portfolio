@@ -39,8 +39,10 @@ if (strpos($filename, 'informationPersonnelles') !== false) {
     <li class="nav-item3">
         <a class="nav-link <?php echo $projetsActive ?>" href="#">Projets</a>
     </li>
+    <li class="nav-item3">
+        <a class="nav-link <?php echo $projetsActive ?>" href="#">CV</a>
+    </li>
     <li class="nav-item4">
         <a class="nav-link <?php echo $connectionActive ?>" href="login.php">Connection</a>
     </li>
 </ul>
-<hr>
