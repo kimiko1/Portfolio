@@ -14,18 +14,23 @@ li {
     border-radius: 133px;
     margin-top: 2vh;
     width: 31vh;
-    box-shadow: 0 0 0 0 #D9D9D9;
-    animation: pulse 1.3s infinite;
+    animation: apparition-left 2s;
 }
 
-img {
+.perso {
     box-sizing: border-box;
     margin-left: 5%;
+    margin-top: 2%;
     position: absolute;
-    width: 10%;
+    width: 15vh;
 
-    border: 10px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: all 1s ease-out;
+    box-shadow: 0 0 0 0 white;
+    border-radius: 48%;
+
+    animation: pulse 1.3s infinite;
+    animation: apparition-left 2s;
 }
 
 a.nav-link{
@@ -35,12 +40,7 @@ a.nav-link{
     line-height: 2vh;
     text-align: center;
 }
-img {
-    transition: all 1s ease-out;
-    box-shadow: 0 0 0 0 #000;
-    border-radius: 40%;
-    animation: pulse 1.3s infinite;
-  }
+
   
   a:hover,
   a:focus {
@@ -52,3 +52,12 @@ img {
       box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.01)
     }
   }
+
+  @keyframes apparition-left {
+    from {
+      transform: translateX(-100px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+}

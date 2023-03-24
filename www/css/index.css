@@ -2,10 +2,12 @@ body{
     background-image: url('../img/accueil.png');
     background-size: cover;    
     background-repeat: no-repeat;
+    
 }
 h1{
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-name: apparition;
+
     font-family: Imperial Script;
     font-style: normal;
     text-align: center;
@@ -19,14 +21,8 @@ h1{
       opacity: 0%;
       transform: translateY(-100px);
     }
-  
     to {
      opacity: 100%;
      transform: translateY(0px);
     }
-  }
-.image{
-    display: block;
-    text-align: center;
-    height: auto;
 }

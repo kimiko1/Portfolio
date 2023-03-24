@@ -6,6 +6,7 @@ $bdd = BDD::instance();
 $infos = $bdd->recupInfo();
 
 ?>
+<!DOCTYPE html>
 <html>
 
 <head>

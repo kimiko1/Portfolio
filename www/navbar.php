@@ -25,11 +25,8 @@ if (strpos($filename, 'informationPersonnelles') !== false) {
     $connectionActive = 'active';
 }
 ?>
-
-<head>
-    <link rel="stylesheet" href="../css/nav.css">
-</head>
-<a href="index.php"><img src="img/2.png" alt=""></a>
+<link rel="stylesheet" href="../css/nav.css">
+<a href="index.php"><img class="perso"src="img/2.png" alt></a>
 
 <ul class="nav">
     <li class="nav-item2">
@@ -40,7 +37,7 @@ if (strpos($filename, 'informationPersonnelles') !== false) {
         <a class="nav-link <?php echo $projetsActive ?>" href="#">Projets</a>
     </li>
     <li class="nav-item3">
-        <a class="nav-link <?php echo $projetsActive ?>" href="#">CV</a>
+        <a class="nav-link <?php echo $projetsActive ?>" href="cv.php">CV</a>
     </li>
     <li class="nav-item4">
         <a class="nav-link <?php echo $connectionActive ?>" href="login.php">Connection</a>
