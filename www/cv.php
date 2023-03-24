@@ -18,7 +18,7 @@
         <a href="#">
             <img class="CV" src="img/cv.jpg" alt="">
         </a>
-        Pour pouvoir télécharger le CV, veuillez cliquer sur l'aperçu.
+        Pour pouvoir télécharger mon CV, veuillez cliquer sur l'apperçu.
     </p>
 </body>
 

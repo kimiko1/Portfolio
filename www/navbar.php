@@ -26,9 +26,9 @@ if (strpos($filename, 'informationPersonnelles') !== false) {
 }
 ?>
 <link rel="stylesheet" href="../css/nav.css">
-<a href="index.php"><img class="perso"src="img/2.png" alt></a>
 
 <ul class="nav">
+    <a href="index.php"><img class="perso"src="img/2.png" alt></a>
     <li class="nav-item2">
         <a class="nav-link <?php echo $informationPesonnellesActive ?>" href="informationPersonnelles.php">Informations Personnelles</a>
     </li>

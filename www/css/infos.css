@@ -1,14 +1,17 @@
 body{
-    background: url('../img/infos.jpg') no-repeat;
-    background-size:cover; 
+    background: url('../img/infos.jpg');
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 .container{
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 15vh;
     background-color: white ;
     border-radius: 133px;
-    
+    width: 120vh;
     animation: floatate;
     animation-duration: 2s;
     animation-iteration-count: infinite;
