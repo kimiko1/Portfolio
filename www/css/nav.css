@@ -10,11 +10,12 @@
 
 .navbar a{
   color: white;
+  text-decoration: none;
 }
 
 .navbar .perso{
   font-size: 2em;
-  width: 20vh;
+  width: 15vh;
 }
 
 .navbar .nav-links ul{
@@ -23,6 +24,7 @@
 
 .navbar .nav-links ul li{
   margin: 0 25px;
+  list-style: none;
 }
 
 .navbar .mob-menu {

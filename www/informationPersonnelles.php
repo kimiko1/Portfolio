@@ -40,7 +40,7 @@ $infos = $bdd->recupInfo();
         <h1>Adresse postal et adresse mail :</h1>
     </div>
     <div class="message">
-        <p>j'habite au <?php echo $p['adresses']?> et mon email est : <?php echo $p['email']?></p>
+        <p>J'habite au <?php echo $p['adresses']?> et mon email est : <?php echo $p['email']?></p>
     </div>
 </div>
 <div class="container">
