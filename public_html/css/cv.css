@@ -1,10 +1,23 @@
-
+nav{
+    background-color: #0c243e;
+}
 .CV{
     margin-top: 10px;
     width: 65vh;
-    justify-items: center;
+}
+.info p{
+    font-size: 5vh;
 }
 
-.info {
-    text-align: center;
+.CV-container {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 900px) {
+.CV-container{
+    display: block;
+}
+p{
+    width: 100%;
+}
 }
