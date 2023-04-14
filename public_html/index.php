@@ -33,7 +33,7 @@ $infos_perso = $bdd->recupInfo();
         </h1>
     <?php endforeach; ?>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>

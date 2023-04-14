@@ -32,9 +32,10 @@ nav {
 .navlinks-container a {
   margin: 0 10px;
   font-size: 16px;
+  align-content: rigth;
   font-weight: 500;
   text-decoration: none;
-  color: black;
+  color: #fafafa;
   position: relative;
 }
 .navlinks-container a::after {
@@ -65,6 +66,7 @@ nav {
   nav {
     padding: 15px 20px;
     position: relative;
+    text-align: center;
   }
 
   /* nav */
@@ -88,7 +90,7 @@ nav {
     cursor: pointer;
     border: none;
     display: flex;
-    background: #fafafa;
+    background: none;
     align-items: center;
     position: relative;
   }
@@ -97,7 +99,7 @@ nav {
     display: block;
     width: 100%;
     height: 2px;
-    background: #333;
+    background: white;
     position: absolute;
     pointer-events: none;
     transition: opacity 0.3s 0.15s ease-out;
@@ -128,9 +130,8 @@ nav {
   .navlinks-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     position: absolute;
-    background: #fafafa;
+    background: black;
     top: 100%;
     left: 0;
     transform: translate(-100%);
@@ -146,16 +147,7 @@ nav {
     font-size: 18px;
     margin: 10px 0px;
   }
-
-  .user-toggler {
-    display: block;
-    cursor: pointer;
-    border: none;
-  }
-
-  .user-toggler img {
-    width: 20px;
-  }
+  
 }
 
 @media (max-width: 500px) {

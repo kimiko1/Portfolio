@@ -23,7 +23,7 @@
       <div class="navlinks-container">
         <a href="informationPersonnelles.php">Informations Personnelles</a>
         <a href="#">Projets</a>
-        <a href="#">CV</a>
+        <a href="cv.php">CV</a>
         <a href="#">Connection</a>
       </div>
 </div>
