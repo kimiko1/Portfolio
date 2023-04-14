@@ -29,6 +29,7 @@ h1{
 }  
 p{
     font-size: 2vh;
+}
 
 @keyframes floatate {
     50%{
