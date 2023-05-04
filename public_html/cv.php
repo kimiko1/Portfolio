@@ -14,12 +14,18 @@
 </head>
 
 <body>
-    <p class="info">
-        <a href="#">
+    <div class="CV-container">
+        <a href="CV_bastien raoult.pdf">
             <img class="CV" src="img/cv.jpg" alt="">
         </a>
-        Pour pouvoir télécharger mon CV, veuillez cliquer sur l'apperçu.
-    </p>
+        <div class="info">
+            <p>
+                Pour pouvoir télécharger mon CV, veuillez cliquer sur l'apperçu.
+            </p>
+
+        </div>
+    </div>
+
 </body>
 
 </html>

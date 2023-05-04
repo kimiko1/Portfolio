@@ -1,14 +1,32 @@
-
+nav{
+    background-color: #0c243e;
+}
 .CV{
     margin-top: 10px;
     width: 65vh;
-    justify-items: center;
+}
+.info p{
+    font-size: 5vh;
 }
 
+<<<<<<< HEAD
 .info {
     text-align: center;
 }
 
 body{
     background-color: gray;
+=======
+.CV-container {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 900px) {
+.CV-container{
+    display: block;
+}
+p{
+    width: 100%;
+}
+>>>>>>> 61680d30b51a87221730b7bd1b2951eb7c5f3295
 }

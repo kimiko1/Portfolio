@@ -18,11 +18,17 @@ body{
     animation-iteration-count: infinite;
 }
 .title{
-    text-align: center;    
+    text-align: center; 
 }
 .message{
     text-align: center; 
     margin-top: 20px;
+}
+h1{
+    font-size: 5vh;
+}  
+p{
+    font-size: 2vh;
 }
 
 @keyframes floatate {

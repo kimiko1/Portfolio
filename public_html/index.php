@@ -22,6 +22,7 @@ $infos_perso = $bdd->recupInfo();
 /css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <meta name="google-site-verification" content="ONtL-Oo0ExhLJcIlc6PQh1h1AycQKH6LYOR84F9J3Dk" />
 </head>
 
 <body>
