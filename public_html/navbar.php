@@ -24,7 +24,7 @@
         <a href="personalInformations.php">Informations Personnelles</a>
         <a href="project.php">Projets</a>
         <a href="cv.php">CV</a>
-        <a href="#">Connection</a>
+        <a href="#">Connexion</a>
       </div>
 </div>
 
