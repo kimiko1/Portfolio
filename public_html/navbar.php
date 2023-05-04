@@ -21,8 +21,8 @@
         <span></span>
       </button>
       <div class="navlinks-container">
-        <a href="informationPersonnelles.php">Informations Personnelles</a>
-        <a href="#">Projets</a>
+        <a href="personalInformations.php">Informations Personnelles</a>
+        <a href="project.php">Projets</a>
         <a href="cv.php">CV</a>
         <a href="#">Connection</a>
       </div>
