@@ -25,11 +25,14 @@
         </div>
         <div class="card">
             <div class="img">
-                <img src="img/braw.png" alt="">
+                <img src="img/site-user.png" alt="">
             </div>
             <div class="infos">
-                <h1>CMS</h1>
-                <p>Brawlhalla Character est un site que j'ai créé dans le cadre de ma formation en BTS SIO </p>
+                <h1>bts-sio.eliotis.com</h1>
+                <p>Ce site est un site créé par M. Sébastien Marchand. J'avais comme objectif d'améliorer en ajoutant des
+                    fonctionnalités non présentes lors de la création de ce site.</p>
+
+                <input type="button" value="En savoir plus" class="savoir_plus">
             </div>
         </div>
     </div>
