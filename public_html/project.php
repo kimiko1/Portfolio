@@ -22,63 +22,6 @@
                 <p>titre</p>
             </div>
         </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/braw.png" alt="">
-            </div>
-            <div class="infos">
-                <p>titre</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/braw.png" alt="">
-            </div>
-            <div class="infos">
-                <p>titre</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/braw.png" alt="">
-            </div>
-            <div class="infos">
-                <p>titre</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/braw.png" alt="">
-            </div>
-            <div class="infos">
-                <p>titre</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/braw.png" alt="">
-            </div>
-            <div class="infos">
-                <p>titre</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/braw.png" alt="">
-            </div>
-            <div class="infos">
-                <p>titre</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/braw.png" alt="">
-            </div>
-            <div class="infos">
-                <p>titre</p>
-            </div>
-        </div>
-        
     </div>
 </body>
 <footer>
