@@ -19,7 +19,17 @@
                 <img src="img/braw.png" alt="">
             </div>
             <div class="infos">
-                <p>titre</p>
+                <h1>Brawlhalla Character</h1>
+                <p>Brawlhalla Character est un site que j'ai créé dans le cadre de ma formation en BTS SIO </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="img/braw.png" alt="">
+            </div>
+            <div class="infos">
+                <h1>CMS</h1>
+                <p>Brawlhalla Character est un site que j'ai créé dans le cadre de ma formation en BTS SIO </p>
             </div>
         </div>
     </div>
