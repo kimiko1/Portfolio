@@ -1,6 +1,20 @@
 <?php
+/******************************************************************************
+ *
+ *                         C L A S S E    B D D
+ *
+ */
+
+// La classe fait partie de l'espace de nommage Model du paradigme MVC
 namespace Model;
-use SQLite3;
+
+// Inclusion des classes nécessaires
+use PDO;
+
+/**
+ * Cette classe sert d'interface d'encapsulation pour les accès à la base
+ * de données SQLite. Toutes les requêtes sont ainsi centralisées.
+ */
 class BDD{
     /**
      * Singleton de la base de données.
@@ -31,19 +45,24 @@ class BDD{
 
         return self::$_instance;
     }
+
     public function __construct()
     {
-        $this->bdd = new SQLite3(BDD::$cheminDeLaBDD);
+        $this->bdd = new PDO('sqlite:'.BDD::$cheminDeLaBDD);
     }
+
     public function recupInfo()
     {
-        $bdd = new SQLite3(BDD::$cheminDeLaBDD);
-        $req = $bdd->query("SELECT * FROM infos_persos");
+        // Construction de la requête SQL
+        $requete = "SELECT * FROM infos_persos";
+        // Envoi de la requête SQL
+        $resultats = $this->bdd->query($requete);
+        // Création d'un tableau vide
         $infos = array();
         // La requête a renvoyé des éléments ?
-        if ($req) {
+        if ($resultats) {
             // Récupération des lignes de la table
-            while ($res = $req->fetchArray(1)) {
+            while ($res = $resultats->fetchAll(PDO::FETCH_ASSOC)) {
                 // Chaque enregistrement vient enrichir le tableau.
                 $infos[] = $res;
             }

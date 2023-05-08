@@ -26,7 +26,7 @@ $infos = $bdd->recupInfo();
             </div>
             <div class="message">
                 <p>Je m'appel
-                    <?php echo $p['nom'] . " " . $p['prenom'] ?>.
+                    <?php echo $p[0]['nom'] . " " . $p[0]['prenom'] ?>.
                 </p>
             </div>
         </div>
@@ -36,8 +36,8 @@ $infos = $bdd->recupInfo();
             </div>
             <div class="message">
                 <p>J'ai actuellement
-                    <?php echo $p['age'] ?> ans et je suis née le
-                    <?php echo $p['date_de_naissance'] ?>
+                    <?php echo $p[0]['age'] ?> ans et je suis née le
+                    <?php echo $p[0]['date_de_naissance'] ?>
                 </p>
             </div>
         </div>
@@ -47,8 +47,8 @@ $infos = $bdd->recupInfo();
             </div>
             <div class="message">
                 <p>J'habite au
-                    <?php echo $p['adresses'] ?> et mon email est :
-                    <?php echo $p['email'] ?>
+                    <?php echo $p[0]['adresses'] ?> et mon email est :
+                    <?php echo $p[0]['email'] ?>
                 </p>
             </div>
         </div>
@@ -58,7 +58,7 @@ $infos = $bdd->recupInfo();
             </div>
             <div class="message">
                 <p>
-                    <?php echo $p['activite'] ?>
+                    <?php echo $p[0]['activite'] ?>
                 </p>
             </div>
         </div>
