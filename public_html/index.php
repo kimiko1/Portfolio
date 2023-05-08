@@ -39,6 +39,6 @@ $infos_perso = $bdd->recupInfo();
 
     <script src="script.js"></script>
 </body>
-<script src="https://kit.fontawesome.com/84f57e19ad.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/84f57e19ad.js" crossorigin="anonymous" async></script>
 
 </html>
