@@ -1,0 +1,39 @@
+body{
+    background: url('../img/infos.webp');
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 10vh auto;
+    padding: 2vh;
+    background-color: white ;
+    border-radius: 133px;
+    min-width: 50vh;
+    max-width: 120vh;
+    animation: floatate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.title{
+    text-align: center; 
+}
+.message{
+    text-align: center; 
+    margin-top: 20px;
+}
+h1{
+    font-size: 5vh;
+}  
+p{
+    font-size: 2vh;
+}
+
+@keyframes floatate {
+    50%{
+        transform: translateY(7px);
+      }
+  }

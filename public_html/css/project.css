@@ -1,0 +1,45 @@
+header {
+  background-color: black;
+}
+
+body {
+  background: rgb(52, 52, 60);
+  background: radial-gradient(circle, rgba(52, 52, 60, 1) 0%, rgba(64, 68, 59, 1) 0%, rgba(28, 24, 24, 1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card{
+  border: 5px solid;
+  width: 55vh;
+  text-align: center;
+  margin-top: 4vh;
+  border-radius: 15px;
+  box-shadow: -5px 3px 9px #000000;
+}
+
+.card .img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 9px;
+}
+
+.savoir_plus{
+  margin: 10px 0;
+  width: 20vh;
+  border-radius: 15px;
+  height: 30px;
+  box-shadow: 10px 5px 5px red;
+}
