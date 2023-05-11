@@ -34,12 +34,8 @@ $age = $bdd->getAge();
                 <?php echo $persos['activite'] ?>.
             </h1>
         <?php endforeach; ?>
-        <i class="fa-thin fa-arrow-down-to-line"></i>
     </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
-<script src="https://kit.fontawesome.com/84f57e19ad.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/84f57e19ad.js" crossorigin="anonymous" async></script>
 
 </html>

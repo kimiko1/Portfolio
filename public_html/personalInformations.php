@@ -37,8 +37,13 @@ $age = $bdd->getAge();
             </div>
             <div class="message">
                 <p>J'ai actuellement
+<<<<<<< HEAD
                     <?php echo $age ?> ans et je suis née le
                     <?php echo $p['date de naissance'] ?>
+=======
+                    <?php echo $p[0]['age'] ?> ans et je suis née le
+                    <?php echo $p[0]['date_de_naissance'] ?>
+>>>>>>> 62403b70f3a7a43c844616e7183b1760ed9565d1
                 </p>
             </div>
         </div>
@@ -48,8 +53,13 @@ $age = $bdd->getAge();
             </div>
             <div class="message">
                 <p>J'habite au
+<<<<<<< HEAD
                     <?php echo $p['adresse postal'] ?> et mon email est :
                     <?php echo $p['adresse mail'] ?>
+=======
+                    <?php echo $p[0]['adresses'] ?> et mon email est :
+                    <?php echo $p[0]['email'] ?>
+>>>>>>> 62403b70f3a7a43c844616e7183b1760ed9565d1
                 </p>
             </div>
         </div>
@@ -58,8 +68,13 @@ $age = $bdd->getAge();
                 <h1>Ce que je fais actuellement :</h1>
             </div>
             <div class="message">
+<<<<<<< HEAD
                 <p>Je suis en
                     <?php echo $p['activite'] ?>
+=======
+                <p>
+                    <?php echo $p[0]['activite'] ?>
+>>>>>>> 62403b70f3a7a43c844616e7183b1760ed9565d1
                 </p>
             </div>
         </div>
