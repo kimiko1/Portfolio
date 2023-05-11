@@ -3,7 +3,8 @@ require('../models/BDD.php');
 use Model\BDD;
 
 $bdd = BDD::instance();
-$infos = $bdd->recupInfo();
+$infos = $bdd->recupInfoPerso();
+$age = $bdd->getAge();
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +27,7 @@ $infos = $bdd->recupInfo();
             </div>
             <div class="message">
                 <p>Je m'appel
-                    <?php echo $p['nom'] . " " . $p['prenom'] ?>.
+                    <?php echo $p['prénom'] . " " . $p['nom'] ?>.
                 </p>
             </div>
         </div>
@@ -36,8 +37,8 @@ $infos = $bdd->recupInfo();
             </div>
             <div class="message">
                 <p>J'ai actuellement
-                    <?php echo $p['age'] ?> ans et je suis née le
-                    <?php echo $p['date_de_naissance'] ?>
+                    <?php echo $age ?> ans et je suis née le
+                    <?php echo $p['date de naissance'] ?>
                 </p>
             </div>
         </div>
@@ -47,8 +48,8 @@ $infos = $bdd->recupInfo();
             </div>
             <div class="message">
                 <p>J'habite au
-                    <?php echo $p['adresses'] ?> et mon email est :
-                    <?php echo $p['email'] ?>
+                    <?php echo $p['adresse postal'] ?> et mon email est :
+                    <?php echo $p['adresse mail'] ?>
                 </p>
             </div>
         </div>
@@ -57,7 +58,7 @@ $infos = $bdd->recupInfo();
                 <h1>Ce que je fais actuellement :</h1>
             </div>
             <div class="message">
-                <p>
+                <p>Je suis en
                     <?php echo $p['activite'] ?>
                 </p>
             </div>

@@ -3,7 +3,7 @@ header{
 }
 
 body{
-    background-image: url('../img/accueil.jpg');
+    background-image: url('/img/background_img/accueil.jpg');
     background-size: cover;
     background-position: center;
 }

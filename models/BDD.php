@@ -1,7 +1,10 @@
 <?php
 namespace Model;
+
 use SQLite3;
-class BDD{
+
+class BDD
+{
     /**
      * Singleton de la base de données.
      */
@@ -35,7 +38,7 @@ class BDD{
     {
         $this->bdd = new SQLite3(BDD::$cheminDeLaBDD);
     }
-    public function recupInfo()
+    public function recupInfoPerso()
     {
         $bdd = new SQLite3(BDD::$cheminDeLaBDD);
         $req = $bdd->query("SELECT * FROM infos_persos");
@@ -49,6 +52,37 @@ class BDD{
             }
         }
         return $infos;
+    }
+    public function recupProject()
+    {
+        $bdd = new SQLite3(BDD::$cheminDeLaBDD);
+        $req = $bdd->query("SELECT * FROM projets");
+        $project = array();
+        // La requête a renvoyé des éléments ?
+        if ($req) {
+            // Récupération des lignes de la table
+            while ($res = $req->fetchArray(1)) {
+                // Chaque enregistrement vient enrichir le tableau.
+                $project[] = $res;
+            }
+        }
+        return $project;
+    }
+    public function getAge()
+    {
+        $bdd = BDD::instance();
+        $infos_perso = $bdd->recupInfoPerso();
+
+        foreach ($infos_perso as $p):
+        $année_naissance = $p["date de naissance"];
+        endforeach;
+        
+        list($d, $m, $y) = explode('/', $année_naissance);
+        $birth_ts = mktime(0, 0, 0, $m, $d, $y);
+        
+        $now = time();
+        $age = date('Y', $now - $birth_ts) - 1970;
+        return $age;
     }
 }
 ?>

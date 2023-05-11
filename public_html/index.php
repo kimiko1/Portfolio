@@ -7,7 +7,8 @@ require('../models/BDD.php');
 use Model\BDD;
 
 $bdd = BDD::instance();
-$infos_perso = $bdd->recupInfo();
+$infos_perso = $bdd->recupInfoPerso();
+$age = $bdd->getAge();
 ?>
 <!Doctype html>
 <html>
@@ -28,8 +29,8 @@ $infos_perso = $bdd->recupInfo();
     <div class="info_perso">
         <?php foreach ($infos_perso as $persos): ?>
             <h1 style="font-size:4  vw;">Bonjour et bienvenue sur le portfolio de
-                <?php echo $persos["prenom"] . ' ' . $persos["nom"] ?>. J'ai actuellement
-                <?php echo $persos['age'] . ' ' ?>ans et
+                <?php echo $persos["prénom"] . ' ' . $persos['nom'] ?>. J'ai actuellement
+                <?php echo $age . ' ' ?>ans et je suis en
                 <?php echo $persos['activite'] ?>.
             </h1>
         <?php endforeach; ?>
