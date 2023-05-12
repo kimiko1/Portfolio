@@ -3,7 +3,7 @@ header{
 }
 
 body{
-    background-image: url('../img/accueil.webp');
+    background-image: url('../img/background/accueil.webp');
     background-size: cover;
     background-position: center;
 }

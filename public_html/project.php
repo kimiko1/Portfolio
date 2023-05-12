@@ -1,3 +1,12 @@
+<?php
+    require('../models/BDD.php');
+
+    use Model\BDD;
+    
+    $bdd = BDD::instance();
+    $projects = $bdd->recupProjects();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -14,27 +23,18 @@
 
 <body>
     <div class="cards">
+        <?php foreach($projects as $project):?>
         <div class="card">
             <div class="img">
-                <img src="img/braw.png" alt="">
+                <img src="<?php echo $project['image of this project']?>" alt="">
             </div>
             <div class="infos">
-                <h1>Brawlhalla Character</h1>
-                <p>Brawlhalla Character est un site que j'ai créé dans le cadre de ma formation en BTS SIO </p>
+                <h1><?= $project['name_project']?></h1>
+                <p><?= $project['short description']?></p>
+                <button onclick="window.location.href= 'detail_project.php?id=<?php echo $project['id']?>'" class="savoir_plus">En savoir plus</button>
             </div>
         </div>
-        <div class="card">
-            <div class="img">
-                <img src="img/site-user.png" alt="">
-            </div>
-            <div class="infos">
-                <h1>bts-sio.eliotis.com</h1>
-                <p>Ce site est un site créé par M. Sébastien Marchand. J'avais comme objectif d'améliorer en ajoutant des
-                    fonctionnalités non présentes lors de la création de ce site.</p>
-
-                <input type="button" value="En savoir plus" class="savoir_plus">
-            </div>
-        </div>
+        <?php endforeach?>
     </div>
 </body>
 <footer>

@@ -8,6 +8,17 @@ use Model\BDD;
 
 $bdd = BDD::instance();
 $infos_perso = $bdd->recupInfoPerso();
+
+$age = $bdd->age();
+echo age();
+
+
+
+
+
+
+;
+
 ?>
 <!Doctype html>
 <html>
@@ -29,7 +40,7 @@ $infos_perso = $bdd->recupInfoPerso();
         <?php foreach ($infos_perso as $p): ?>
             <h1 style="font-size:4  vw;">Bonjour et bienvenue sur le portfolio de
                 <?php echo $p['surname'] . ' ' . $p["name"] ?>. J'ai actuellement
-                ans et 20 ans
+                <?= $age ?>ans et je suis en
                 <?php echo $p['activity'] ?>.
             </h1>
         <?php endforeach; ?>
