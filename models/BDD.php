@@ -51,20 +51,20 @@ class BDD{
         $this->bdd = new PDO('sqlite:'.BDD::$cheminDeLaBDD);
     }
 
-    public function recupInfo()
+    public function recupInfoPerso()
     {
         // Construction de la requête SQL
-        $requete = "SELECT * FROM infos_persos";
+        $requete = "SELECT * FROM infos_perso";
         // Envoi de la requête SQL
         $resultats = $this->bdd->query($requete);
         // Création d'un tableau vide
-        $infos = array();
+        $infos = [];
         // La requête a renvoyé des éléments ?
         if ($resultats) {
             // Récupération des lignes de la table
             while ($res = $resultats->fetchAll(PDO::FETCH_ASSOC)) {
                 // Chaque enregistrement vient enrichir le tableau.
-                $infos[] = $res;
+                $infos = $res;
             }
         }
         return $infos;

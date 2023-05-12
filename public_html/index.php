@@ -7,7 +7,7 @@ require('../models/BDD.php');
 use Model\BDD;
 
 $bdd = BDD::instance();
-$infos_perso = $bdd->recupInfo();
+$infos_perso = $bdd->recupInfoPerso();
 ?>
 <!Doctype html>
 <html>
@@ -26,11 +26,11 @@ $infos_perso = $bdd->recupInfo();
         <?php require('navbar.php'); ?>
     </header>
     <div class="info_perso">
-        <?php foreach ($infos_perso as $persos): ?>
+        <?php foreach ($infos_perso as $p): ?>
             <h1 style="font-size:4  vw;">Bonjour et bienvenue sur le portfolio de
-                <?php echo $persos[0]["prenom"] . ' ' . $persos[0]["nom"] ?>. J'ai actuellement
-                <?php echo $persos[0]['age'] . ' ' ?>ans et
-                <?php echo $persos[0]['activite'] ?>.
+                <?php echo $p['surname'] . ' ' . $p["name"] ?>. J'ai actuellement
+                ans et 20 ans
+                <?php echo $p['activity'] ?>.
             </h1>
         <?php endforeach; ?>
     </div>

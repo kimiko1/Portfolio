@@ -12,8 +12,8 @@ body{
     padding: 2vh;
     background-color: white ;
     border-radius: 133px;
-    min-width: 50vh;
-    max-width: 120vh;
+    min-width: 30vh;
+    max-width: 90vh;
     animation: floatate;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -36,4 +36,10 @@ p{
     50%{
         transform: translateY(7px);
       }
+  }
+
+  @media (max-width: 900px) {
+    .container{
+        animation: none;
+    }
   }
