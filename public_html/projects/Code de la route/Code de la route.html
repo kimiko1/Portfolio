@@ -1,10 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Code de la route</title>
 	<style>
-
 		@media only screen {
 			body {
 				margin: 2em auto;
@@ -25,8 +27,8 @@
 			max-width: 100%;
 		}
 
-		.figcaption{
-			text-align:center;
+		.figcaption {
+			text-align: center;
 		}
 
 		@media only print {
@@ -58,6 +60,7 @@
 			display: inline-block;
 			margin-right: 1em;
 		}
+
 		.simple-table-header-color {
 			background: rgb(247, 246, 243);
 			color: black;
@@ -189,7 +192,7 @@
 		}
 
 		.sans {
-		font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+			font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 		}
 
 		.code {
@@ -203,71 +206,7 @@
 		.mono {
 			font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
 		}
-
-		.pdf .sans {
-			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP';
-		}
-
-		.pdf:lang(zh-CN) .sans {
-			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC';
-		}
-
-		.pdf:lang(zh-TW) .sans {
-			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC';
-		}
-
-		.pdf:lang(ko-KR) .sans {
-			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR';
-		}
-
-		.pdf .code {
-			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
-		}
-
-		.pdf:lang(zh-CN) .code {
-			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
-		}
-
-		.pdf:lang(zh-TW) .code {
-			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
-		}
-
-		.pdf:lang(ko-KR) .code {
-			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
-		}
-
-		.pdf .serif {
-			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP';
-		}
-
-		.pdf:lang(zh-CN) .serif {
-			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC';
-		}
-
-		.pdf:lang(zh-TW) .serif {
-			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC';
-		}
-
-		.pdf:lang(ko-KR) .serif {
-			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR';
-		}
-
-		.pdf .mono {
-			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
-		}
-
-		.pdf:lang(zh-CN) .mono {
-			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
-		}
-
-		.pdf:lang(zh-TW) .mono {
-			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
-		}
-
-		.pdf:lang(ko-KR) .mono {
-			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
-		}
-
+		
 		.checkbox {
 			display: inline-flex;
 			vertical-align: text-bottom;
@@ -297,19 +236,19 @@
 			<h2>Trucs à savoir pour le code de la route</h2>
 			<ul class="toggle">
 				<li>
-					<details open="">
+					<details>
 						<summary>Panneaux du code de la route</summary>
 						<ul class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary> Panneaux de danger</summary>
-									<figure class="image"
-									><a
+									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png"><img
 												style="width:240px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png" /></a>
 										<div class="figcaption">
-											<figcaption">Est placé à 150 mètres avant le danger hors agglomération, 50 mètres avant danger en agglomération</figcaption>
+											<figcaption">Est placé à 150 mètres avant le danger hors agglomération, 50
+												mètres avant danger en agglomération</figcaption>
 										</div>
 									</figure>
 									<figure id="5b1dcb65-3e58-4eec-946c-832a5b1ecd41" class="image"
@@ -317,51 +256,53 @@
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.png" /></a>
-												<div class="figcaption">
-													<figcaption style="text-align: center;">Signalant que la circulation ce fait dans les deux sens, il est
-														placé à l’endroit même ou la circulation ce fait à double sens</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption style="text-align: center;">Signalant que la circulation ce fait
+												dans les deux sens, il est
+												placé à l’endroit même ou la circulation ce fait à double sens
+											</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png"><img
 												style="width:240px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png" /></a>
-												<div class="figcaption">
-													<figcaption>Fond blanc = Permanent</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Fond blanc = Permanent</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.jpeg"><img
 												style="width:200px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.jpeg" /></a>
-												<div class="figcaption">
-													<figcaption>Fond jaune = Temporaire</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Fond jaune = Temporaire</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%202.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%202.png" /></a>
-												<div class="figcaption">
-													<figcaption>Passage d’écolier</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Passage d’écolier</figcaption>
+										</div>
 									</figure>
 									<figure id="2fae0f8a-7143-43a9-a144-952a5063edc2" class="image"
 										style="text-align:center"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%203.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%203.png" /></a>
-												<div class="figcaption">
-													<figcaption>Passage piéton</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Passage piéton</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%204.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%204.png" /></a>
-												<div class="figcaption">
-													<figcaption>Danger non spécifié</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Danger non spécifié</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.jpeg"><img
@@ -373,80 +314,82 @@
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%205.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%205.png" /></a>
-												<div class="figcaption">
-													<figcaption>Passage d’animaux sauvages</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Passage d’animaux sauvages</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%206.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%206.png" /></a>
-												<div class="figcaption">
-													<figcaption>Passage de cavalier</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Passage de cavalier</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%207.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%207.png" /></a>
-												<div class="figcaption">
-													<figcaption>Descente dangereuse</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Descente dangereuse</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%208.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%208.png" /></a>
-												<div class="figcaption">
-													<figcaption>Panneau d’annonce de feux tricolores</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Panneau d’annonce de feux tricolores</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%209.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%209.png" /></a>
-												<div class="figcaption">
-													<figcaption>Panneau chute de pierre</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Panneau chute de pierre</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2010.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2010.png" /></a>
-												<div class="figcaption">
-													<figcaption>Panneau de virage à gauche</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Panneau de virage à gauche</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2011.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2011.png" /></a>
-												<div class="figcaption">
-													<figcaption>Panneau de virage à droite</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Panneau de virage à droite</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2012.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2012.png" /></a>
-												<div class="figcaption">
-													<figcaption>Panneau de série de virage dont le premier est à gauche</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Panneau de série de virage dont le premier est à gauche
+											</figcaption>
+										</div>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2013.png"><img
 												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2013.png" /></a>
-												<div class="figcaption">
-													<figcaption>Panneau de série de virage dont le premier est à droite</figcaption>
-												</div>
+										<div class="figcaption">
+											<figcaption>Panneau de série de virage dont le premier est à droite
+											</figcaption>
+										</div>
 									</figure>
 								</details>
 							</li>
 						</ul>
 						<!-- <ul id="67dd2d46-69f2-4be4-a3ff-486f96b8f39d" class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary></summary>
 								</details>
 							</li>
@@ -456,11 +399,11 @@
 			</ul>
 			<ul class="toggle">
 				<li>
-					<details open="">
+					<details>
 						<summary>Chiffres à absolument connaître</summary>
 						<ul class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary><strong>Calculer la distance d’arrêt :</strong></summary>
 									<p>On fait dizaine de la vitesse
 										fois lui même, exemple : à 50km/h la distance d’arrêt sera de 5x5 = 25, donc 25
@@ -470,7 +413,7 @@
 						</ul>
 						<ul class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary><strong>Calculer la distance de sécurité :</strong></summary>
 									<p>On fait, dizaine de la vitesse
 										fois 6, exemple : à 50km/h la distance de sécurité à garder est de 5x6 = 30,
@@ -480,26 +423,26 @@
 						</ul>
 						<ul class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary><strong>Calculer la distance parcourut en 1 seconde :</strong></summary>
 									On fait, dizaine de la vitesse
-										fois 3, exemple : à 90km/h la distance parcourue en 1 seconde est de 9x3 = 27,
-										donc de 27 mètres en une seconde.</p>
+									fois 3, exemple : à 90km/h la distance parcourue en 1 seconde est de 9x3 = 27,
+									donc de 27 mètres en une seconde.</p>
 								</details>
 							</li>
 						</ul>
 						<ul class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary><strong>Intervalle de temps à laisser entre nous même et le véhicule qui
 											nous précède :</strong></summary>
 									<p class="">Réponse : 2 secondes.</p>
 								</details>
 							</li>
 						</ul>
-						<ul  class="toggle">
+						<ul class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary><strong>L'alcoolémie maximale à ne pas dépasser pour un jeune
 											conducteur :</strong></summary>
 									<p>Réponse : 0,2 G/L de sang et
@@ -510,7 +453,7 @@
 						</ul>
 						<ul class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary><strong>L'alcoolémie maximale à ne pas dépasser pour un conducteur
 											expérimenté : </strong></summary>
 									<p>Réponse : 0,5 G/L de sang.</p>
@@ -519,7 +462,7 @@
 						</ul>
 						<ul class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary><strong>Pour signaler une panne ou un accident, le triangle de
 											présignalisation doit être posé en amont du véhicule à au moins : </strong>
 									</summary>
@@ -529,11 +472,11 @@
 						</ul>
 						<ul class="toggle">
 							<li>
-								<details open="">
-									<summary><strong>Numéro des services de secours en cas d’accident :</strong>
+								<details>
+									<summary><strong>Numéro des services de secours en cas d'accident :</strong>
 									</summary>
 									<p>Réponse : 15 Samu, 18 Pompier,
-										112 numéro valide dans toute l’UE.</p>
+										112 numéro valide dans toute l'UE.</p>
 									<p>
 									</p>
 								</details>
@@ -541,7 +484,7 @@
 						</ul>
 						<ul class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary><strong>Distance latérale de sécurité à laisser avec un usager vulnérable
 											doit être d’au moins</strong></summary>
 									<p>En ville : 1 mètre</p>
@@ -552,7 +495,7 @@
 						</ul>
 						<ul class="toggle">
 							<li>
-								<details open="">
+								<details>
 									<summary><strong>Un enfant est autorisé à s'installer à l'avant de la voiture à
 											partir de : </strong></summary>
 									<p>Réponse 10 ans.</p>
