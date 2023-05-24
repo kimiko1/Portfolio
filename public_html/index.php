@@ -9,16 +9,6 @@ use Model\BDD;
 $bdd = BDD::instance();
 $infos_perso = $bdd->recupInfoPerso();
 
-$age = $bdd->age();
-echo age();
-
-
-
-
-
-
-;
-
 ?>
 <!Doctype html>
 <html>

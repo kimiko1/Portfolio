@@ -36,7 +36,7 @@ $infos = $bdd->recupInfoPerso();
             </div>
             <div class="message">
                 <p>J'ai actuellement 20 ans et je suis née le
-                    <?php echo $p['date of birth'] ?>
+                    <?php echo $p['date_of_birth'] ?>
                 </p>
             </div>
         </div>

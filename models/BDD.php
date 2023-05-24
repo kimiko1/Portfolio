@@ -72,7 +72,7 @@ class BDD{
 
     public function recupProjects() {
         // Construction de la requête SQL
-        $requete = "SELECT * FROM projets";
+        $requete = "SELECT * FROM projets;";
         // Envoi de la requête SQL
         $resultats = $this->bdd->query($requete);
         // Création d'un tableau vide
@@ -87,15 +87,31 @@ class BDD{
         }
         return $infos; 
     }
-    public function age() {    
-            $date_naissance = BDD::recupInfoPerso();
-            $date_nai = $date_naissance[0]['date_of_birth'];
-            $age = date('Y') - $date_nai;
-            if (date('md') < date('md', strtotime($date_nai))){
-                return $age - 1;
-            } 
-            return $age;
-    }
+    // public function age() {  
+    //     // Construction de la requête SQL
+    //     $requete = "SELECT date_of_birth FROM infos_perso where surname='Bastien';";
+
+    //     // Envoi de la requête SQL
+    //     $resultats = $this->bdd->exec($requete);
+        
+    //     $infos = [];
+    //     // La requête a renvoyé des éléments ?
+    //     if ($resultats) {
+    //         // Récupération des lignes de la table
+    //         while ($res = $resultats->fetchAll(PDO::FETCH_ASSOC)) {
+    //             // Chaque enregistrement vient enrichir le tableau.
+    //             $infos = $res;
+    //         }
+    //     }
+    //     return $infos;
+
+    //         // $date_nai = $resultats[0]['date_of_birth'];
+    //         // $age = date('Y') - $date_nai;
+    //         // if (date('md') < date('md', strtotime($date_nai))){
+    //         //     return $age - 1;
+    //         // } 
+    //         // return $age;
+    // }
 }
 
 ?>
