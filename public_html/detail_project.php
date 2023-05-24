@@ -34,7 +34,7 @@ $project = $bdd->recupProjectsByID($id);
                 <div class="desc">
                     <?= $p['description']; ?>
                     Cliquez sur ce lien pour pouvoir visiter le site du projet.
-                    <a href="projects/<?= $p['project_name']?>/<?= $p['project_name']?>.html"><?= $p['project_name']?></a>
+                    <a href="projects/<?= $p['project_name']?>/<?= $p['project_name']?>.php"><?= $p['project_name']?></a>
                 </div>
                 <div class="img-project">
                     <img src="<?= $p['project_img']; ?>" alt="image du projet">

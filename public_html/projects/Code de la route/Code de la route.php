@@ -5,226 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Code de la route.css">
 	<title>Code de la route</title>
-	<style>
-		@media only screen {
-			body {
-				margin: 2em auto;
-				max-width: 900px;
-				color: rgb(55, 53, 47);
-			}
-		}
-
-		.page-title {
-			font-size: 2.5rem;
-			font-weight: 700;
-			margin-top: 0;
-			margin-bottom: 0.75em;
-			text-align: center;
-		}
-
-		img {
-			max-width: 100%;
-		}
-
-		.figcaption {
-			text-align: center;
-		}
-
-		@media only print {
-			img {
-				max-height: 100vh;
-				object-fit: contain;
-			}
-		}
-
-		@page {
-			margin: 1in;
-		}
-
-		.toggle {
-			padding-inline-start: 0em;
-			list-style-type: none;
-		}
-
-		/* Indent toggle children */
-		.toggle>li>details {
-			padding-left: 1.7em;
-		}
-
-		.toggle>li>details>summary {
-			margin-left: -1.1em;
-		}
-
-		.collection-title {
-			display: inline-block;
-			margin-right: 1em;
-		}
-
-		.simple-table-header-color {
-			background: rgb(247, 246, 243);
-			color: black;
-		}
-
-
-		.link-to-page {
-			margin: 1em 0;
-			padding: 0;
-			border: none;
-			font-weight: 500;
-		}
-
-		p>.user {
-			opacity: 0.5;
-		}
-
-		td>.user,
-		td>time {
-			white-space: nowrap;
-		}
-
-		input[type="checkbox"] {
-			transform: scale(1.5);
-			margin-right: 0.6em;
-			vertical-align: middle;
-		}
-
-		p {
-			margin-top: 0.5em;
-			margin-bottom: 0.5em;
-		}
-
-		.image {
-			border: none;
-			margin: 1.5em 0;
-			padding: 0;
-			border-radius: 0;
-			text-align: center;
-		}
-
-		.code,
-		code {
-			background: rgba(135, 131, 120, 0.15);
-			border-radius: 3px;
-			padding: 0.2em 0.4em;
-			border-radius: 3px;
-			font-size: 85%;
-			tab-size: 2;
-		}
-
-		code {
-			color: #eb5757;
-		}
-
-		.code {
-			padding: 1.5em 1em;
-		}
-
-		.code-wrap {
-			white-space: pre-wrap;
-			word-break: break-all;
-		}
-
-		.code>code {
-			background: none;
-			padding: 0;
-			font-size: 100%;
-			color: inherit;
-		}
-
-		blockquote {
-			font-size: 1.25em;
-			margin: 1em 0;
-			padding-left: 1em;
-			border-left: 3px solid rgb(55, 53, 47);
-		}
-
-		.bookmark {
-			text-decoration: none;
-			max-height: 8em;
-			padding: 0;
-			display: flex;
-			width: 100%;
-			align-items: stretch;
-		}
-
-		.bookmark-title {
-			font-size: 0.85em;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			height: 1.75em;
-			white-space: nowrap;
-		}
-
-		.bookmark-text {
-			display: flex;
-			flex-direction: column;
-		}
-
-		.bookmark-info {
-			flex: 4 1 180px;
-			padding: 12px 14px 14px;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-
-		.bookmark-image {
-			width: 33%;
-			flex: 1 1 180px;
-			display: block;
-			position: relative;
-			object-fit: cover;
-			border-radius: 1px;
-		}
-
-		.bookmark-description {
-			color: rgba(55, 53, 47, 0.6);
-			font-size: 0.75em;
-			overflow: hidden;
-			max-height: 4.5em;
-			word-break: break-word;
-		}
-
-		.bookmark-href {
-			font-size: 0.75em;
-			margin-top: 0.25em;
-		}
-
-		.sans {
-			font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-		}
-
-		.code {
-			font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
-		}
-
-		.serif {
-			font-family: Lyon-Text, Georgia, ui-serif, serif;
-		}
-
-		.mono {
-			font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
-		}
-		
-		.checkbox {
-			display: inline-flex;
-			vertical-align: text-bottom;
-			width: 16;
-			height: 16;
-			background-size: 16px;
-			margin-left: 2px;
-			margin-right: 5px;
-		}
-
-		.checkbox-on {
-			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-		}
-
-		.checkbox-off {
-			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-		}
-	</style>
 </head>
 
 <body>
@@ -244,20 +26,17 @@
 									<summary> Panneaux de danger</summary>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png"><img
-												style="width:240px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png" /></a>
 										<div class="figcaption">
 											<figcaption">Est placé à 150 mètres avant le danger hors agglomération, 50
 												mètres avant danger en agglomération</figcaption>
 										</div>
 									</figure>
-									<figure id="5b1dcb65-3e58-4eec-946c-832a5b1ecd41" class="image"
-										style="text-align:center"><a
+									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.png" /></a>
 										<div class="figcaption">
-											<figcaption style="text-align: center;">Signalant que la circulation ce fait
+											<figcaption>Signalant que la circulation ce fait
 												dans les deux sens, il est
 												placé à l’endroit même ou la circulation ce fait à double sens
 											</figcaption>
@@ -265,7 +44,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png"><img
-												style="width:240px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png" /></a>
 										<div class="figcaption">
 											<figcaption>Fond blanc = Permanent</figcaption>
@@ -273,7 +51,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.jpeg"><img
-												style="width:200px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.jpeg" /></a>
 										<div class="figcaption">
 											<figcaption>Fond jaune = Temporaire</figcaption>
@@ -281,16 +58,13 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%202.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%202.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage d’écolier</figcaption>
 										</div>
 									</figure>
-									<figure id="2fae0f8a-7143-43a9-a144-952a5063edc2" class="image"
-										style="text-align:center"><a
+									<figure id="2fae0f8a-7143-43a9-a144-952a5063edc2" class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%203.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%203.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage piéton</figcaption>
@@ -298,7 +72,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%204.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%204.png" /></a>
 										<div class="figcaption">
 											<figcaption>Danger non spécifié</figcaption>
@@ -306,13 +79,11 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.jpeg"><img
-												style="width:354px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.jpeg" /></a>
 										<figcaption>Passage d’animaux, domestique</figcaption>
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%205.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%205.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage d’animaux sauvages</figcaption>
@@ -320,7 +91,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%206.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%206.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage de cavalier</figcaption>
@@ -328,7 +98,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%207.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%207.png" /></a>
 										<div class="figcaption">
 											<figcaption>Descente dangereuse</figcaption>
@@ -336,7 +105,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%208.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%208.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau d’annonce de feux tricolores</figcaption>
@@ -344,7 +112,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%209.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%209.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau chute de pierre</figcaption>
@@ -352,7 +119,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2010.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2010.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau de virage à gauche</figcaption>
@@ -360,7 +126,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2011.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2011.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau de virage à droite</figcaption>
@@ -368,7 +133,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2012.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2012.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau de série de virage dont le premier est à gauche
@@ -377,7 +141,6 @@
 									</figure>
 									<figure class="image"><a
 											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2013.png"><img
-												style="width:239px"
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2013.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau de série de virage dont le premier est à droite
