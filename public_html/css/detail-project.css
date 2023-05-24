@@ -1,0 +1,19 @@
+header{
+    background-color: black;
+}
+
+h1{
+    margin-top: 2%;
+    text-align: center;
+}
+
+.desc{
+    text-align: center;
+    margin: 3%;
+}
+
+.img-project img{
+    object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

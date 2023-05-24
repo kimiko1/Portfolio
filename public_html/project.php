@@ -26,10 +26,10 @@
         <?php foreach($projects as $project):?>
         <div class="card">
             <div class="img">
-                <img src="<?php echo $project['image of this project']?>" alt="">
+                <img src="<?php echo $project['project_img']?>" alt="">
             </div>
             <div class="infos">
-                <h1><?= $project['name_project']?></h1>
+                <h1><?= $project['project_name']?></h1>
                 <p><?= $project['short description']?></p>
                 <button onclick="window.location.href= 'detail_project.php?id=<?php echo $project['id']?>'" class="savoir_plus">En savoir plus</button>
             </div>

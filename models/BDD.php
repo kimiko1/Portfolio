@@ -15,7 +15,8 @@ use PDO;
  * Cette classe sert d'interface d'encapsulation pour les accès à la base
  * de données SQLite. Toutes les requêtes sont ainsi centralisées.
  */
-class BDD{
+class BDD
+{
     /**
      * Singleton de la base de données.
      */
@@ -48,7 +49,7 @@ class BDD{
 
     public function __construct()
     {
-        $this->bdd = new PDO('sqlite:'.BDD::$cheminDeLaBDD);
+        $this->bdd = new PDO('sqlite:' . BDD::$cheminDeLaBDD);
     }
 
     public function recupInfoPerso()
@@ -70,7 +71,8 @@ class BDD{
         return $infos;
     }
 
-    public function recupProjects() {
+    public function recupProjects()
+    {
         // Construction de la requête SQL
         $requete = "SELECT * FROM projets;";
         // Envoi de la requête SQL
@@ -85,7 +87,26 @@ class BDD{
                 $infos = $res;
             }
         }
-        return $infos; 
+        return $infos;
+    }
+
+    public function recupProjectsByID($id)
+    {
+        // Construction de la requête SQL
+        $requete = "SELECT * FROM projets WHERE id='$id';";
+        // Envoi de la requête SQL
+        $resultats = $this->bdd->query($requete);
+        // Création d'un tableau vide
+        $infos = [];
+        // La requête a renvoyé des éléments ?
+        if ($resultats) {
+            // Récupération des lignes de la table
+            while ($res = $resultats->fetchAll(PDO::FETCH_ASSOC)) {
+                // Chaque enregistrement vient enrichir le tableau.
+                $infos = $res;
+            }
+        }
+        return $infos;
     }
     // public function age() {  
     //     // Construction de la requête SQL
@@ -93,7 +114,7 @@ class BDD{
 
     //     // Envoi de la requête SQL
     //     $resultats = $this->bdd->exec($requete);
-        
+
     //     $infos = [];
     //     // La requête a renvoyé des éléments ?
     //     if ($resultats) {

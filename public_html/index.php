@@ -30,7 +30,7 @@ $infos_perso = $bdd->recupInfoPerso();
         <?php foreach ($infos_perso as $p): ?>
             <h1 style="font-size:4  vw;">Bonjour et bienvenue sur le portfolio de
                 <?php echo $p['surname'] . ' ' . $p["name"] ?>. J'ai actuellement
-                <?= $age ?>ans et je suis en
+                20 ans et je suis en
                 <?php echo $p['activity'] ?>.
             </h1>
         <?php endforeach; ?>
