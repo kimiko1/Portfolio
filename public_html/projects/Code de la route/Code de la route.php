@@ -24,16 +24,14 @@
 							<li>
 								<details>
 									<summary> Panneaux de danger</summary>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png"><img
+									<figure class="image"><a href=""><img
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png" /></a>
 										<div class="figcaption">
 											<figcaption">Est placé à 150 mètres avant le danger hors agglomération, 50
 												mètres avant danger en agglomération</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.png"><img
+									<figure class="image"><a href=""><img
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.png" /></a>
 										<div class="figcaption">
 											<figcaption>Signalant que la circulation ce fait
@@ -42,108 +40,165 @@
 											</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png"><img
+									<figure class="image"><a href=""><img
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png" /></a>
 										<div class="figcaption">
 											<figcaption>Fond blanc = Permanent</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.jpeg"><img
+									<figure class="image"><a href=""><img
 												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.jpeg" /></a>
 										<div class="figcaption">
 											<figcaption>Fond jaune = Temporaire</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%202.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%202.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 2.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage d’écolier</figcaption>
 										</div>
 									</figure>
-									<figure id="2fae0f8a-7143-43a9-a144-952a5063edc2" class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%203.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%203.png" /></a>
+									<figure id="2fae0f8a-7143-43a9-a144-952a5063edc2" class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 3.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage piéton</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%204.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%204.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 4.png" /></a>
 										<div class="figcaption">
 											<figcaption>Danger non spécifié</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.jpeg"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.jpeg" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 1.jpeg" /></a>
 										<figcaption>Passage d’animaux, domestique</figcaption>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%205.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%205.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 5.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage d’animaux sauvages</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%206.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%206.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 6.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage de cavalier</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%207.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%207.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 7.png" /></a>
 										<div class="figcaption">
 											<figcaption>Descente dangereuse</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%208.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%208.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 8.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau d’annonce de feux tricolores</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%209.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%209.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 9.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau chute de pierre</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2010.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2010.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 10.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau de virage à gauche</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2011.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2011.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 11.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau de virage à droite</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2012.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2012.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 12.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau de série de virage dont le premier est à gauche
 											</figcaption>
 										</div>
 									</figure>
-									<figure class="image"><a
-											href="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2013.png"><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%2013.png" /></a>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 13.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau de série de virage dont le premier est à droite
+											</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 14.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau débouché sur un quai
+											</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 15.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau débouché de cycliste
+											</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 16.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau de passage de voie aérienne
+											</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 17.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau de vent latérale fréquent, il n'indique ni la direction
+												ni la force du vent
+											</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 18.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau d'annonce de cassis ou dos d'âne en France, Cassis =
+												creux et dos d'âne = bosses.
+											</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 19.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau d'annonce dos d'âne
+											</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 20.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau de rétrécissement de la chaussé
+											</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 21.jpg" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau de rétrécissement de la chaussé par la droite de
+											</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 22.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau de rétrécissement de la chaussé par la gauche
+											</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 23.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau de chaussé glissante
 											</figcaption>
 										</div>
 									</figure>
@@ -167,9 +222,9 @@
 						<ul class="toggle">
 							<li>
 								<details>
-									<summary><strong>Calculer la distance d’arrêt :</strong></summary>
+									<summary><strong>Calculer la distance d'arrêt :</strong></summary>
 									<p>On fait dizaine de la vitesse
-										fois lui même, exemple : à 50km/h la distance d’arrêt sera de 5x5 = 25, donc 25
+										fois lui même, exemple : à 50km/h la distance d'arrêt sera de 5x5 = 25, donc 25
 										mètres.</p>
 								</details>
 							</li>
