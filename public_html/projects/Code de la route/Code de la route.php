@@ -25,14 +25,14 @@
 								<details>
 									<summary> Panneaux de danger</summary>
 									<figure class="image"><a href=""><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png" /></a>
+												src="img/Danger/Panneau permanent.png" /></a>
 										<div class="figcaption">
 											<figcaption">Est placé à 150 mètres avant le danger hors agglomération, 50
 												mètres avant danger en agglomération</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled%201.png" /></a>
+												src="img/Danger/Panneau double sens.png" /></a>
 										<div class="figcaption">
 											<figcaption>Signalant que la circulation ce fait
 												dans les deux sens, il est
@@ -41,165 +41,158 @@
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.png" /></a>
+												src="img/Danger/Panneau permanent.png" /></a>
 										<div class="figcaption">
 											<figcaption>Fond blanc = Permanent</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code%20de%20la%20route%20d4f4023c1a274170bce93051e8d02daf/Untitled.jpeg" /></a>
+												src="img/Danger/Panneau temporaire.jpeg" /></a>
 										<div class="figcaption">
 											<figcaption>Fond jaune = Temporaire</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 2.png" /></a>
+												src="img/Danger/Passage d’écolier.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage d’écolier</figcaption>
 										</div>
 									</figure>
 									<figure id="2fae0f8a-7143-43a9-a144-952a5063edc2" class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 3.png" /></a>
+												src="img/Danger/Passage piéton.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage piéton</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 4.png" /></a>
+												src="img/Danger/Danger non spécifié.png" /></a>
 										<div class="figcaption">
 											<figcaption>Danger non spécifié</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 1.jpeg" /></a>
+												src="img/Danger/Passage d’animaux, domestique.jpeg" /></a>
 										<figcaption>Passage d’animaux, domestique</figcaption>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 5.png" /></a>
+												src="img/Danger/Passage d’animaux sauvages.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage d’animaux sauvages</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 6.png" /></a>
+												src="img/Danger/Passage de cavalier.png" /></a>
 										<div class="figcaption">
 											<figcaption>Passage de cavalier</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 7.png" /></a>
+												src="img/Danger/Descente dangereuse.png" /></a>
 										<div class="figcaption">
 											<figcaption>Descente dangereuse</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 8.png" /></a>
+												src="img/Danger/Panneau d’annonce de feux tricolores.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau d’annonce de feux tricolores</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 9.png" /></a>
+												src="img/Danger/Panneau chute de pierre.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau chute de pierre</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 10.png" /></a>
+												src="img/Danger/virage à gauche.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau de virage à gauche</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 11.png" /></a>
+												src="img/Danger/virage à droite.png" /></a>
 										<div class="figcaption">
 											<figcaption>Panneau de virage à droite</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 12.png" /></a>
+												src="img/Danger/série de virage dont le premier est à gauche.png" /></a>
 										<div class="figcaption">
-											<figcaption>Panneau de série de virage dont le premier est à gauche
+											<figcaption>Panneau de série de virage dont le premier est à gauche</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="img/Danger/série de virage dont le premier est à droite.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau de série de virage dont le premier est à droite</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="img/Danger/débouché sur un quai.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau débouché sur un quai</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="img/Danger/débouché de cycliste.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau débouché de cycliste</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="img/Danger/passage de voie aérienne.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau de passage de voie aérienne</figcaption>
+										</div>
+									</figure>
+									<figure class="image"><a href=""><img
+												src="img/Danger/vent latérale fréquent.png" /></a>
+										<div class="figcaption">
+											<figcaption>Panneau de vent latérale fréquent, il n'indique ni la direction	ni la force du vent
 											</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 13.png" /></a>
+												src="img/Danger/Panneau d'annonce de cassis ou dos d'âne.png" /></a>
 										<div class="figcaption">
-											<figcaption>Panneau de série de virage dont le premier est à droite
-											</figcaption>
+											<figcaption>Panneau d'annonce de cassis ou dos d'âne en France, Cassis = creux et dos d'âne = bosses.</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 14.png" /></a>
+												src="img/Danger/dos d'âne.png" /></a>
 										<div class="figcaption">
-											<figcaption>Panneau débouché sur un quai
-											</figcaption>
+											<figcaption>Panneau d'annonce dos d'âne</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 15.png" /></a>
+												src="img/Danger/rétrécissement de la chaussé.png" /></a>
 										<div class="figcaption">
-											<figcaption>Panneau débouché de cycliste
-											</figcaption>
+											<figcaption>Panneau de rétrécissement de la chaussé</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 16.png" /></a>
+												src="img/Danger/rétrécissement de la chaussé par la droite.jpg" /></a>
 										<div class="figcaption">
-											<figcaption>Panneau de passage de voie aérienne
-											</figcaption>
+											<figcaption>Panneau de rétrécissement de la chaussé par la droite</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 17.png" /></a>
+												src="img/Danger/rétrécissement de la chaussé par la gauche.png" /></a>
 										<div class="figcaption">
-											<figcaption>Panneau de vent latérale fréquent, il n'indique ni la direction
-												ni la force du vent
-											</figcaption>
+											<figcaption>Panneau de rétrécissement de la chaussé par la gauche</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 18.png" /></a>
+												src="img/Danger/chaussé glissante.png" /></a>
 										<div class="figcaption">
-											<figcaption>Panneau d'annonce de cassis ou dos d'âne en France, Cassis =
-												creux et dos d'âne = bosses.
-											</figcaption>
+											<figcaption>Panneau de chaussé glissante</figcaption>
 										</div>
 									</figure>
 									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 19.png" /></a>
+												src="img/Danger/pont mobile.png" /></a>
 										<div class="figcaption">
-											<figcaption>Panneau d'annonce dos d'âne
-											</figcaption>
-										</div>
-									</figure>
-									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 20.png" /></a>
-										<div class="figcaption">
-											<figcaption>Panneau de rétrécissement de la chaussé
-											</figcaption>
-										</div>
-									</figure>
-									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 21.jpg" /></a>
-										<div class="figcaption">
-											<figcaption>Panneau de rétrécissement de la chaussé par la droite de
-											</figcaption>
-										</div>
-									</figure>
-									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 22.png" /></a>
-										<div class="figcaption">
-											<figcaption>Panneau de rétrécissement de la chaussé par la gauche
-											</figcaption>
-										</div>
-									</figure>
-									<figure class="image"><a href=""><img
-												src="Code de la route d4f4023c1a274170bce93051e8d02daf/Untitled 23.png" /></a>
-										<div class="figcaption">
-											<figcaption>Panneau de chaussé glissante
-											</figcaption>
+											<figcaption>Panneau pont mobile</figcaption>
 										</div>
 									</figure>
 								</details>
