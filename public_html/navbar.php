@@ -24,12 +24,12 @@
         <a href="personalInformations.php">Informations Personnelles</a>
         <a href="project.php">Projets</a>
         <a href="cv.php">CV</a>
-        <a href="#">Connexion</a>
+        <a href="login.php">Connexion</a>
       </div>
 </div>
 
   </nav>
 
 
-  <script src="script.js"></script>
+  <script src="JavaScript/script.js"></script>
 </body>

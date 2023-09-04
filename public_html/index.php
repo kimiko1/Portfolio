@@ -35,7 +35,7 @@ $infos_perso = $bdd->recupInfoPerso();
             </h1>
         <?php endforeach; ?>
     </div>
+    <script src="https://kit.fontawesome.com/84f57e19ad.js" crossorigin="anonymous" async></script>
 </body>
-<script src="https://kit.fontawesome.com/84f57e19ad.js" crossorigin="anonymous" async></script>
 
 </html>

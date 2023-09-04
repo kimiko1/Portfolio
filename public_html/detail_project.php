@@ -33,9 +33,13 @@ $project = $bdd->recupProjectsByID($id);
             </h1>
             <div class="infos">
                 <div class="desc">
-                    <?= $p['description']; ?>
-                    Cliquez sur ce lien pour pouvoir visiter le site du projet.
-                    <a href="projects/<?= $p['project_name']?>/<?= $p['project_name']?>.php"><?= $p['project_name']?></a>
+                    <p>
+                        <?= $p['description']; ?>
+                    </p>
+                    <p>
+                        Cliquez sur ce lien pour pouvoir visiter le site du projet.
+                        <a href="projects/<?= $p['project_name']?>/<?= $p['project_name']?>.php"><?= $p['project_name']?></a>
+                    </p>
                 </div>
                 <div class="img-project">
                     <img src="<?= $p['project_img']; ?>" alt="image du projet">
@@ -49,13 +53,17 @@ $project = $bdd->recupProjectsByID($id);
             </h1>
             <div class="infos">
                 <div class="desc">
-                    <?= $p['description']; ?>
-                    Cliquez sur ce lien pour pouvoir visiter le site du projet.
-                    <a href="projects/<?= $p['project_name']?>/www/index.php"><?= $p['project_name']?></a>
+                    <p>
+                        <?= $p['description']; ?>
+                    </p>
+                    <p>
+                        Cliquez sur ce lien pour pouvoir visiter le site du projet.
+                        <a href="projects/<?= $p['project_name']?>/public_html/index.php"><?= $p['project_name']?></a>
+                    </p>
                 </div>
-                <!-- <div class="img-project">
+                <div class="img-project">
                     <img src="<?= $p['project_img']; ?>" alt="image du projet">
-                </div> -->
+                </div>
             </div>
         <?php endforeach; ?>
         <?php endif?>

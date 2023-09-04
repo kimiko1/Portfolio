@@ -11,12 +11,32 @@ namespace Model;
 // Inclusion des classes nécessaires
 use PDO;
 
+// Inclusion du traits permettant de scinder la classe BDD pour faciliter la maintenance 
+require dirname(__FILE__)."/BDDConnexionTrait.php";
+require dirname(__FILE__)."/BDDProjectTrait.php";
+require dirname(__FILE__)."/BDDPresentationTrait.php";
+
 /**
  * Cette classe sert d'interface d'encapsulation pour les accès à la base
  * de données SQLite. Toutes les requêtes sont ainsi centralisées.
  */
 class BDD
 {
+    /**
+     * Trait centralisant le code lié aux connexions
+     */
+    use BDDConnexionTrait;
+
+    /**
+     * Trait centralisant le code lié aux projets
+     */
+    use BDDProjectTrait;
+
+    /**
+     * Trait centralisant le code lié à la présentation
+     */
+    use BDDPresentationTrait;
+
     /**
      * Singleton de la base de données.
      */
@@ -26,6 +46,11 @@ class BDD
      * Variable de classe indiquant le chemin d'accès vers le fichier de la base de données.
      */
     private static string $cheminDeLaBDD = '../data/database.db';
+
+    /**
+     * Variable de classe indiquant le chemin d'accès vers le fichier de la base de données côté admin.
+     */
+    private static string $cheminDeLaBDDAdmin = '../../data/database.db';
 
     /**
      * Base de données SQLite3.
@@ -49,90 +74,13 @@ class BDD
 
     public function __construct()
     {
-        $this->bdd = new PDO('sqlite:' . BDD::$cheminDeLaBDD);
-    }
-
-    public function recupInfoPerso()
-    {
-        // Construction de la requête SQL
-        $requete = "SELECT * FROM infos_perso";
-        // Envoi de la requête SQL
-        $resultats = $this->bdd->query($requete);
-        // Création d'un tableau vide
-        $infos = [];
-        // La requête a renvoyé des éléments ?
-        if ($resultats) {
-            // Récupération des lignes de la table
-            while ($res = $resultats->fetchAll(PDO::FETCH_ASSOC)) {
-                // Chaque enregistrement vient enrichir le tableau.
-                $infos = $res;
-            }
+        if($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/index.php' || $_SERVER['REQUEST_URI'] == '/login.php'|| $_SERVER['REQUEST_URI'] == '/project.php' || $_SERVER['REQUEST_URI'] == '/personalInformations.php' || $_SERVER['REQUEST_URI'] == '/controle_identification.php' || $_SERVER['REQUEST_URI'] == '/cv.php' || $_SERVER['REQUEST_URI'] == '/detail_project.php?id=1' || $_SERVER['REQUEST_URI'] == '/detail_project.php?id=2' || $_SERVER['REQUEST_URI'] == '/detail_project.php?id=3'|| $_SERVER['REQUEST_URI'] == '/detail_project.php?id=4'){
+            $this->bdd = new PDO('sqlite:' . BDD::$cheminDeLaBDD); 
         }
-        return $infos;
-    }
-
-    public function recupProjects()
-    {
-        // Construction de la requête SQL
-        $requete = "SELECT * FROM projets;";
-        // Envoi de la requête SQL
-        $resultats = $this->bdd->query($requete);
-        // Création d'un tableau vide
-        $infos = [];
-        // La requête a renvoyé des éléments ?
-        if ($resultats) {
-            // Récupération des lignes de la table
-            while ($res = $resultats->fetchAll(PDO::FETCH_ASSOC)) {
-                // Chaque enregistrement vient enrichir le tableau.
-                $infos = $res;
-            }
+        else{
+            $this->bdd = new PDO('sqlite:' . BDD::$cheminDeLaBDDAdmin);
         }
-        return $infos;
     }
-
-    public function recupProjectsByID($id)
-    {
-        // Construction de la requête SQL
-        $requete = "SELECT * FROM projets WHERE id='$id';";
-        // Envoi de la requête SQL
-        $resultats = $this->bdd->query($requete);
-        // Création d'un tableau vide
-        $infos = [];
-        // La requête a renvoyé des éléments ?
-        if ($resultats) {
-            // Récupération des lignes de la table
-            while ($res = $resultats->fetchAll(PDO::FETCH_ASSOC)) {
-                // Chaque enregistrement vient enrichir le tableau.
-                $infos = $res;
-            }
-        }
-        return $infos;
-    }
-    // public function age() {  
-    //     // Construction de la requête SQL
-    //     $requete = "SELECT date_of_birth FROM infos_perso where surname='Bastien';";
-
-    //     // Envoi de la requête SQL
-    //     $resultats = $this->bdd->exec($requete);
-
-    //     $infos = [];
-    //     // La requête a renvoyé des éléments ?
-    //     if ($resultats) {
-    //         // Récupération des lignes de la table
-    //         while ($res = $resultats->fetchAll(PDO::FETCH_ASSOC)) {
-    //             // Chaque enregistrement vient enrichir le tableau.
-    //             $infos = $res;
-    //         }
-    //     }
-    //     return $infos;
-
-    //         // $date_nai = $resultats[0]['date_of_birth'];
-    //         // $age = date('Y') - $date_nai;
-    //         // if (date('md') < date('md', strtotime($date_nai))){
-    //         //     return $age - 1;
-    //         // } 
-    //         // return $age;
-    // }
 }
 
 ?>

@@ -1,0 +1,6 @@
+# Pour des raisons de cybersécurité, l'accès au fichier
+# de la base de données SQLite est interdit.
+# Tous les fichiers ".db" du site sont en accès refusés.
+<Files .db>
+deny from all
+</Files>
