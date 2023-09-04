@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 7.741935483870968vh);
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: black solid;
+    padding: 10px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}

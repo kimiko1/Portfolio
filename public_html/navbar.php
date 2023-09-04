@@ -22,11 +22,12 @@
       </button>
       <div class="navlinks-container">
         <a href="personalInformations.php">Informations Personnelles</a>
+        <a href="skill.php">Compétences</a>
+        <a href="experience.php">Expériences</a>
         <a href="project.php">Projets</a>
-        <a href="cv.php">CV</a>
         <a href="login.php">Connexion</a>
       </div>
-</div>
+    </div>
 
   </nav>
 

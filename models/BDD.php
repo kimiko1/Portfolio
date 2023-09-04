@@ -14,7 +14,7 @@ use PDO;
 // Inclusion du traits permettant de scinder la classe BDD pour faciliter la maintenance 
 require dirname(__FILE__)."/BDDConnexionTrait.php";
 require dirname(__FILE__)."/BDDProjectTrait.php";
-require dirname(__FILE__)."/BDDPresentationTrait.php";
+require dirname(__FILE__)."/BDDSkillTrait.php";
 
 /**
  * Cette classe sert d'interface d'encapsulation pour les accès à la base
@@ -33,9 +33,9 @@ class BDD
     use BDDProjectTrait;
 
     /**
-     * Trait centralisant le code lié à la présentation
+     * Trait centralisant le code lié aux compétences
      */
-    use BDDPresentationTrait;
+    use BDDSkillTrait;
 
     /**
      * Singleton de la base de données.
@@ -74,7 +74,7 @@ class BDD
 
     public function __construct()
     {
-        if($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/index.php' || $_SERVER['REQUEST_URI'] == '/login.php'|| $_SERVER['REQUEST_URI'] == '/project.php' || $_SERVER['REQUEST_URI'] == '/personalInformations.php' || $_SERVER['REQUEST_URI'] == '/controle_identification.php' || $_SERVER['REQUEST_URI'] == '/cv.php' || $_SERVER['REQUEST_URI'] == '/detail_project.php?id=1' || $_SERVER['REQUEST_URI'] == '/detail_project.php?id=2' || $_SERVER['REQUEST_URI'] == '/detail_project.php?id=3'|| $_SERVER['REQUEST_URI'] == '/detail_project.php?id=4'){
+        if($_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/index.php' || $_SERVER['REQUEST_URI'] == '/login.php'|| $_SERVER['REQUEST_URI'] == '/project.php' || $_SERVER['REQUEST_URI'] == '/skill.php' || $_SERVER['REQUEST_URI'] == '/experience.php' || $_SERVER['REQUEST_URI'] == '/personalInformations.php' || $_SERVER['REQUEST_URI'] == '/controle_identification.php' || $_SERVER['REQUEST_URI'] == '/skill.php' || $_SERVER['REQUEST_URI'] == '/cv.php' || $_SERVER['REQUEST_URI'] == '/detail_project.php?id=1' || $_SERVER['REQUEST_URI'] == '/detail_project.php?id=2' || $_SERVER['REQUEST_URI'] == '/detail_project.php?id=3' || $_SERVER['REQUEST_URI'] == '/detail_project.php?id=4'){
             $this->bdd = new PDO('sqlite:' . BDD::$cheminDeLaBDD); 
         }
         else{
