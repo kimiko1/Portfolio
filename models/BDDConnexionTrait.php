@@ -11,7 +11,7 @@ trait BDDConnexionTrait
         $motDePasse = password_hash($motDePasse, PASSWORD_DEFAULT);
 
         // Construction de la requête SQL
-        $stmt = $this->bdd->prepare("INSERT INTO Users (user_mail, user_password) VALUES (:mail, :motDePasse)");
+        $stmt = $this->bdd->prepare("INSERT INTO Identification (email, password) VALUES (:mail, :motDePasse)");
         $stmt->bindParam(':mail', $mail);
         $stmt->bindParam(':motDePasse', $motDePasse);
         // On exécute la requête
@@ -24,14 +24,14 @@ trait BDDConnexionTrait
     public function utilisateur($mail, $motDePasse)
     {
         // Construction de la requête SQL
-        $stmt = $this->bdd->prepare("SELECT * from Users where user_mail=:email");
+        $stmt = $this->bdd->prepare("SELECT * from Identification where email=:email");
         // Envoi de la requête SQL
         $stmt->bindParam(':email', $mail);
         $stmt->execute();
         $res = $stmt->fetch(PDO::FETCH_ASSOC);
         
         // On vérifie si le mot de passe est correct
-        if (password_verify($motDePasse, $res['user_password'])) {
+        if (password_verify($motDePasse, $res['password'])) {
             // On retourne les informations de l'utilisateur
             return $res;
         }

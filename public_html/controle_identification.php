@@ -10,7 +10,7 @@
 ob_start();
 
  // Inclusion des espaces de nommage utilisés dans notre code
-require '../model/BDD.php';
+require '../models/BDD.php';
 
 // Inclusion des espaces de nommage utilisés dans notre code.
 use Model\BDD;
@@ -21,7 +21,7 @@ if (isset($_POST['valid_connection'])) {
     $bdd = BDD::instance();
     $user = $bdd->utilisateur($_POST["mail"], $_POST["mot_de_passe"]);
     if ($user != false) {
-        if ($user['user_admin'] == 1) {
+        if ($user['role'] == 'Admin') {
             $bdd->clean_php_session();
             session_start();
             $_SESSION['email'] = $user['user_mail'];
@@ -39,7 +39,7 @@ if (isset($_POST['valid_connection'])) {
         }
     }
     else {
-        header('Location: ./connexion.php');
+        header('Location: ./login.php');
     }
 
 }
@@ -48,9 +48,9 @@ else {
     $user = $bdd->utilisateur($_POST["mail"], $_POST["mot_de_passe"]);
     if ($user===false) {
         $bdd->ajouterUtilisateur($_POST["mail"], $_POST["mot_de_passe"]);
-        header('Location: ./connexion.php');
+        header('Location: ./login.php');
     }
     else{
-        header('Location: ./connexion.php');
+        header('Location: ./login.php');
     }
 }

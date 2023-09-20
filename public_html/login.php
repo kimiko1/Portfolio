@@ -61,7 +61,7 @@ if (isset($_POST['error'])) {
                 <label for="floatingPassword">Mot de passe</label>
                 <input type="password" name="mot_de_passe" class="form-control" id="floatingPassword"
                     placeholder="mot_de_passe" required>
-                <input class="submit" type="submit" name="created_connection" value="Se connecter">
+                <input class="submit" type="submit" name="created_connection" value="S'identifier">
             </form>
         </div>
         <div class="form-container login-container">
