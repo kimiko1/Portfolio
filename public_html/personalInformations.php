@@ -1,5 +1,6 @@
 <?php
 require('../models/BDD.php');
+
 use Model\BDD;
 
 $bdd   = BDD::instance();
@@ -7,19 +8,20 @@ $infos = $bdd->recupInfoPerso();
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Information Personnelles</title>
-    <?php require('navbar.php'); ?>
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/infos.css">
 </head>
 
 <body>
-    <?php foreach ($infos as $p): ?>
+    <?php require('navbar.php'); ?>
+    <?php foreach ($infos as $p) : ?>
         <div class="container">
             <div class="title">
                 <h1>Nom et Prénom :</h1>

@@ -30,12 +30,7 @@ if (isset($_POST['valid_connection'])) {
             header('Location: ./Admin/index.php');
     
         } else {
-            $bdd->clean_php_session();
-            session_start();
-            $_SESSION['email'] = $user['user_mail'];
-            $_SESSION['password'] = $user['user_password'];
-            $_SESSION['admin'] = $user['user_admin'];
-            header('Location: ./index.php');
+            header('Location: ./login.php');
         }
     }
     else {

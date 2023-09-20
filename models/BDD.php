@@ -15,6 +15,7 @@ use PDO;
 require dirname(__FILE__)."/BDDConnexionTrait.php";
 require dirname(__FILE__)."/BDDProjectTrait.php";
 require dirname(__FILE__)."/BDDSkillTrait.php";
+require dirname(__FILE__)."/BDDNavTrait.php";
 
 /**
  * Cette classe sert d'interface d'encapsulation pour les accès à la base
@@ -36,6 +37,11 @@ class BDD
      * Trait centralisant le code lié aux compétences
      */
     use BDDSkillTrait;
+
+        /**
+     * Trait centralisant le code lié a la nav-bar
+     */
+    use BDDNavTrait;
 
     /**
      * Singleton de la base de données.

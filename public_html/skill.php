@@ -1,6 +1,5 @@
 <?php
 // Inclusion des models
-require('../models/User.php');
 require('../models/BDD.php');
 
 use Model\BDD;
@@ -15,6 +14,7 @@ $competence = $bdd->recupSkills();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/skill.css">
     <title>Compétence</title>
 </head>
