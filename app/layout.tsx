@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -9,8 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Voicaify",
-  description: "New app to learn languages with native speakers",
+  title: "Bastien | Portfolio",
+  description:
+    "Portfolio de Bastien, développeur front-end spécialisé en interfaces modernes et expériences web soignées.",
 };
 
 export default function RootLayout({
